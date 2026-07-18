@@ -1,0 +1,159 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* Main Container */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Card */
+
+.card {
+  width: 700px;
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Headings */
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+p {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #475569;
+  margin: 20px 0;
+}
+
+/* Labels */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Inputs */
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
+}
+
+/* File Upload */
+
+input[type="file"] {
+  background: #1e293b;
+  border: 2px dashed #475569;
+  padding: 16px;
+  cursor: pointer;
+}
+
+/* Button */
+
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+}
+
+/* Loading Animation */
+
+.spin {
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
